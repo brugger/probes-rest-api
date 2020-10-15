@@ -224,8 +224,10 @@ func handleRequests() {
 //    myRouter.HandleFunc("/probe/{id}/", readProbes)
 //    myRouter.HandleFunc("/probe/{id}", updateProbe).Methods("PATCH")
 //    myRouter.HandleFunc("/probe/{id}", deleteProbe).Methods("DELETE")
-    fmt.Println("Listening on port: 10000")
-    log.Fatal(http.ListenAndServe(":10000", myRouter))
+    var port = 10000
+    var portString = fmt.Sprintf(":%d" , port)
+    fmt.Println("Listening on port" , portString)
+    log.Fatal(http.ListenAndServe( portString , myRouter))
     
 }
 func main() {
