@@ -1,18 +1,19 @@
 package main
 
 import (
-    "encoding/csv"
-    "encoding/json"
-    "fmt"
-    "github.com/gorilla/mux"
-    "io"
-    "log"
-    "net/http"
-    "os"
-    "strconv"
-    "database/sql"
-    _ "github.com/mattn/go-sqlite3"
-    "strings"
+	"database/sql"
+	"encoding/csv"
+	"encoding/json"
+	"fmt"
+	"io"
+	"log"
+	"net/http"
+	"os"
+	"strconv"
+	"strings"
+
+	"github.com/gorilla/mux"
+	_ "github.com/mattn/go-sqlite3"
 )
 
 var version string = "0.0.0"
@@ -223,8 +224,9 @@ func handleRequests() {
 //    myRouter.HandleFunc("/probe/{id}/", readProbes)
 //    myRouter.HandleFunc("/probe/{id}", updateProbe).Methods("PATCH")
 //    myRouter.HandleFunc("/probe/{id}", deleteProbe).Methods("DELETE")
-
+    fmt.Println("Listening on port: 10000")
     log.Fatal(http.ListenAndServe(":10000", myRouter))
+    
 }
 func main() {
 //    probes = readProbes("example.array.design.tsv")
