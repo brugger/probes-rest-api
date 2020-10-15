@@ -12,6 +12,8 @@ import (
 	"strconv"
 	"strings"
 
+    "github.com/brugger/probes-rest-api/internal/db"
+
 	"github.com/gorilla/mux"
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -234,6 +236,7 @@ func main() {
 //    fmt.Println( probes[0] )
 
 //    json.NewEncoder(os.Stdout).Encode( probes[0] )
+    db.hello_world()
     handleRequests()
 
 }
