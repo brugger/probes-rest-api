@@ -1,0 +1,100 @@
+probeset_id,affy_snp_id,rsid,chr,pos_hg19_vcf,ref_hg19_vcf,alt_hg19_vcf,pos_hg38_vcf,ref_hg38_vcf,alt_hg38_vcf,gene,c_num,source,category
+AX-37361813,35298040,rs116587930,1,727841,G,A,792461,G,A,gene1,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-32137419,13637449,rs116720794,1,729632,C,T,794252,C,T,gene2,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-13191280,13945728,rs3131972,1,752721,A,G,817341,A,G,gene3,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-11194291,13963217,rs12184325,1,754105,C,T,818725,C,T,gene4,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,eQTL
+AX-32225497,13995532,,1,756604,A,G,821224,A,G,gene5,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-32233025,14027812,rs114525117,1,759036,G,A,823656,G,A,gene6,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-40202607,14055733,,1,761147,T,C,825767,T,C,gene7,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-11214939,14143477,rs12562034,1,768448,G,A,833068,G,A,gene8,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-32276299,14204659,rs116390263,1,772927,C,T,837547,C,T,gene9,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-40233095,14295684,rs4040617,1,779322,A,G,843942,A,G,gene10,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-178480148,65537822,rs141175086,1,780397,C,T,845017,C,T,gene11,NM_djdhdhdhdh:c.38383A>C ,GWAS hits,NHGRI/EBI GWAS Catalog
+AX-166602552,14479802,rs10751454,1,807512,A,G,872132,G,A,gene12,NM_djdhdhdhdh:c.38383A>C ,GWAS hits,GRASP
+AX-32365087,14483160,rs11240779,1,808631,G,A,873251,G,A,gene13,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,eQTL
+AX-32366075,14486956,rs57181708,1,809876,A,G,874496,A,G,gene14,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-32367179,14491442,rs59771807,1,813034,A,G,877654,A,G,gene15,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-32416607,14715887,rs4422948,1,835499,A,G,900119,A,G,gene16,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-40293871,14759851,rs4970383,1,838555,C,A,903175,C,A,gene17,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-32432755,14788025,rs4970382,1,840753,T,C,905373,T,C,gene18,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,eQTL
+AX-40308003,14869245,rs950122,1,846864,G,C,911484,G,C,gene19,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-32459995,14911802,rs13303222,1,849998,A,G,914618,A,G,gene20,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-32461903,14921318,,1,850780,C,T,915400,C,T,gene21,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-32463579,14929230,rs72631889,1,851390,G,T,916010,G,T,gene22,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-32488633,15021879,rs4970459,1,858051,C,T,922671,C,T,gene23,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-32501941,15078125,,1,862124,A,G,926744,A,G,gene24,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-37361961,35298376,rs192998324,1,862772,A,G,927392,A,G,gene25,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-32510499,15113315,rs55678698,1,864490,C,T,929110,C,T,gene26,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-83583153,52127248,rs146327803,1,865625,G,A,930245,G,A,gene27,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83336112,15130708,rs41285790,1,865628,G,A,930248,G,A,gene28,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-32515369,15131757,,1,865694,C,T,930314,C,T,gene29,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-32519659,15150141,rs74047407,1,866938,G,A,931558,G,A,gene30,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,eQTL
+AX-32523575,15166475,rs2001730,1,868096,T,C,932716,T,C,gene31,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-32532271,15204691,rs77579483,1,870766,C,T,935386,C,T,gene32,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-40357457,15245544,rs1110052,1,873558,G,T,938178,G,T,gene33,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-83348256,52127313,rs199625867,1,874501,C,T,939121,C,T,gene34,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-90073272,89008640,,1,874730,TGAGC,{T},939350,TGAGC,T,gene35,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-83090629,52127317,rs200584816,1,874809,G,C,939429,G,C,gene36,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83155618,52325915,rs765383278,1,876498,GA,{G},941118,GA,G,gene37,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83145234,52127407,rs138897766,1,878744,G,C,943364,G,C,gene38,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-86578644,80267079,rs764300897,1,879390,GGA,{G},944010,GGA,G,gene39,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-83008057,52127411,rs200048444,1,879409,C,G,944029,C,G,gene40,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-40371761,15348733,rs3748592,1,880238,A,G,944858,A,G,gene41,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,eQTL
+AX-40372207,15351369,,1,880390,C,A,945010,C,A,gene42,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-83477186,52127418,rs144656266,1,880483,A,G,945103,A,G,gene43,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83447683,15353012,rs74047418,1,880502,C,T,945122,C,T,gene44,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-86619649,80210140,rs767695182,1,880527,C,T,945147,C,T,gene45,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-86626124,80210141,rs369553946,1,881003,G,A,945623,G,A,gene46,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-83334993,52127423,,1,881554,C,T,946174,C,T,gene47,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-32571027,15368355,rs2272757,1,881627,G,A,946247,G,A,gene48,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-32572119,15372836,,1,881918,G,A,946538,G,A,gene49,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83326432,52127434,rs139055451,1,883539,G,A,948159,G,A,gene50,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-32587129,15419319,rs67274836,1,884767,G,A,949387,G,A,gene51,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-86739827,80290518,rs778187422,1,886575,T,{TG},951195,T,TG,gene52,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-32596813,15447216,rs3748596,1,888639,T,C,953259,T,C,gene53,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-40386941,15447262,rs3748597,1,888659,T,C,953279,T,C,gene54,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-32597053,15448461,rs13302945,1,889159,A,C,953779,A,C,gene55,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-86712476,80210145,,1,889182,G,A,953802,G,A,gene56,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-32597087,15448648,,1,889238,G,A,953858,G,A,gene57,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-90051434,89023000,rs778041820,1,889255,CGACA,{C},953875,CGACA,C,gene58,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-32598061,15453154,rs13303065,1,891059,C,T,955679,C,T,gene59,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,eQTL
+AX-32598537,15455211,rs112164716,1,891898,T,C,956518,T,C,gene60,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-86703376,80267082,rs778382476,1,892487,CA,{C},957107,CA,C,gene61,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-86624382,80210147,,1,894304,C,T,958924,C,T,gene62,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-83590569,52127464,rs144217019,1,894330,G,A,958950,G,A,gene63,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-86688796,80210148,,1,894379,G,A,958999,G,A,gene64,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-37362005,35298427,rs115438739,1,894519,G,A,959139,G,A,gene65,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-40388697,15462334,rs13303010,1,894573,G,A,959193,G,A,gene66,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-83067323,52350436,rs760285488,1,894617,C,{CCGT},959237,C,CCGT,gene67,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-83310851,52127475,rs138690517,1,897009,A,G,961629,A,G,gene68,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-86619916,80290520,rs756310467,1,897029,C,{CA},961649,C,CA,gene69,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-32602371,15470699,rs6696971,1,897738,C,T,962358,C,T,gene70,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-83576500,52127479,,1,898153,C,A,962773,C,A,gene71,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83047076,52127482,,1,898603,C,G,963223,C,G,gene72,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-94375045,92042573,rs1468288262,1,898737,T,G,963357,T,G,gene73,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Neurological disorders
+AX-83584550,52127484,rs143920987,1,898787,G,T,963407,G,T,gene74,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83373734,52127488,rs199893924,1,899789,G,A,964409,G,A,gene75,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-32604399,15478278,rs115741058,1,900427,G,A,965047,G,A,gene76,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83080893,52127505,rs201730138,1,902088,G,A,966708,G,A,gene77,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83493197,52127508,rs199941754,1,902116,C,T,966736,C,T,gene78,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-82888921,52127509,,1,902133,C,G,966753,C,G,gene79,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-32606079,15485777,,1,903426,C,T,968046,C,T,gene80,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-32607511,15491976,rs41285810,1,905894,C,T,970514,C,T,gene81,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-86694264,80267087,rs866407554,1,905952,GC,{G},970572,GC,G,gene82,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-83477867,52127654,rs199749406,1,906067,G,A,970687,G,A,gene83,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-86735397,80210155,rs373289246,1,906114,C,T,970734,C,T,gene84,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-83515469,52127674,,1,906472,G,A,971092,G,A,gene85,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83387435,52127678,rs139460652,1,906717,G,A,971337,G,A,gene86,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-64216344,35298451,,1,906769,C,A,971389,C,A,gene87,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-86623279,80210156,rs368307925,1,906786,T,C,971406,T,C,gene88,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Protein truncating variants
+AX-83537617,52127686,rs148169601,1,908390,G,A,973010,G,A,gene89,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83120684,52127690,rs145015690,1,908669,G,A,973289,G,A,gene90,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83570514,52127694,rs142080242,1,908929,C,T,973549,C,T,gene91,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-32609813,15501533,,1,909238,G,C,973858,G,C,gene92,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-83441849,52127704,rs201434720,1,909369,G,A,973989,G,A,gene93,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-32610677,15504485,rs6685581,1,910438,A,G,975058,A,G,gene94,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-32610857,15505370,,1,911101,C,T,975721,C,T,gene95,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for low frequency variants
+AX-32611561,15508681,rs2340596,1,913889,G,A,978509,G,A,gene96,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,eQTL
+AX-32611765,15509554,rs72891183,1,914521,C,T,979141,C,T,gene97,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Other rare coding variants
+AX-32612591,15513693,rs6659460,1,918270,C,T,982890,C,T,gene98,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
+AX-40395309,15513987,rs2341354,1,918573,A,G,983193,A,G,gene99,NM_djdhdhdhdh:c.38383A>C ,UKBiobank,Genome-wide coverage for common variants
