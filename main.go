@@ -45,7 +45,6 @@ func dbGetProbes(filter map[string]string) ([]Probe) {
         }
     }
 
-//    fmt.Println( conds )
     if len( conds) > 0 {
         stmt = fmt.Sprintf("%s WHERE %s ", stmt, strings.Join(conds[:], " AND "))
     }
@@ -57,6 +56,7 @@ func dbGetProbes(filter map[string]string) ([]Probe) {
 
     rows, err := db.Query(stmt)
     checkErr(err)
+    var probes []Probe
 
     for rows.Next() {
 
@@ -110,7 +110,6 @@ type Probe struct {
     Category    string `json:"category"`
 }
 
-var probes []Probe
 
 
 func infoPage(w http.ResponseWriter, r *http.Request){
