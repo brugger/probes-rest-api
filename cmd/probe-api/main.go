@@ -1,22 +1,16 @@
 package main
 
 import (
-	"database/sql"
-	"encoding/csv"
 	"encoding/json"
 	"fmt"
-	"io"
 	"log"
 	"net/http"
-	"os"
-	"strconv"
 	"strings"
-
-    "github.com/brugger/probes-rest-api/internal/db"
+	"github.com/brugger/kbr-go-tools/db"
 
 	"github.com/gorilla/mux"
-	_ "github.com/mattn/go-sqlite3"
 )
+
 
 var version string = "0.0.0"
 
@@ -29,13 +23,11 @@ func checkErr(err error) {
     }
 }
 
-func dbGetProbes(filter map[string]string) ([]Probe) {
-    fmt.Println( filter )
-
-    // insert
+func dbGetProbes(filter map[string]string) ([]map[string]interface{}) {
     stmt := "SELECT * FROM probes"
 
     var conds []string
+
     for key, value := range filter {
         switch key {
             case "from":
@@ -52,67 +44,11 @@ func dbGetProbes(filter map[string]string) ([]Probe) {
         stmt = fmt.Sprintf("%s WHERE %s ", stmt, strings.Join(conds[:], " AND "))
     }
 
-    fmt.Println( stmt )
-
-    db, err := sql.Open("sqlite3", sqlite_file)
-    checkErr(err)
-
-    rows, err := db.Query(stmt)
-    checkErr(err)
-    var probes []Probe
-
-    for rows.Next() {
-
-        var new_probe Probe
-
-
-
-        err = rows.Scan(&new_probe.Probeset_id,
-                        &new_probe.Affy_snp_id,
-                        &new_probe.Rsid,
-                        &new_probe.Chr,
-                        &new_probe.HG19_pos,
-                        &new_probe.HG19_ref,
-                        &new_probe.HG19_alt,
-                        &new_probe.HG38_pos,
-                        &new_probe.HG38_ref,
-                        &new_probe.HG38_alt,
-                        &new_probe.Gene,
-                        &new_probe.Cpos,
-                        &new_probe.Source,
-                        &new_probe.Category)
-
-        probes = append( probes,  new_probe)
-        //checkErr(err)
-    }
-
-    rows.Close() //good habit to close
-
-    db.Close()
-
-//    fmt.Println( probes )
-    return probes
+    dbUtils.Connect( "sqlite3", sqlite_file )
+    rows := dbUtils.AsList( stmt )
+    dbUtils.Close()
+    return rows
 }
-
-
-type Probe struct {
-    Probeset_id string `json:"probeset_id"`
-    Affy_snp_id int    `json:"affy_snp_id"`
-    Rsid        sql.NullString `json:"rsid"`
-    Chr         string `json:"chr"`
-    HG19_pos    int    `json:"hg19_pos"`
-    HG19_ref    string `json:"hg19_ref"`
-    HG19_alt    string `json:"hg19_alt"`
-    HG38_pos    int    `json:"hg38_pos"`
-    HG38_ref    string `json:"hg38_ref"`
-    HG38_alt    string `json:"hg38_alt"`
-    Gene        string `json:"gene"`
-    Cpos        string `json:"c_pos"`
-
-    Source      string `json:"source"`
-    Category    string `json:"category"`
-}
-
 
 
 func infoPage(w http.ResponseWriter, r *http.Request){
@@ -123,7 +59,6 @@ func infoPage(w http.ResponseWriter, r *http.Request){
     json.NewEncoder(w).Encode(info)
 
 }
-
 
 func getProbes(w http.ResponseWriter, r *http.Request){
     fmt.Println("Endpoint Hit: probes")
@@ -137,7 +72,6 @@ func getProbes(w http.ResponseWriter, r *http.Request){
     if _, ok := values["coords"]; !ok {
         values["coords"] = "hg38"
     }
-
 
     if _, ok := values["pos"]; ok {
         fmt.Println("pos provided")
@@ -166,54 +100,12 @@ func getProbes(w http.ResponseWriter, r *http.Request){
 
 
     probes := dbGetProbes( values )
+    fmt.Println( probes )
     json.NewEncoder(w).Encode( probes )
 }
 
 
 
-func readProbes(filename string) ([]Probe){
-
-    fmt.Println( "reading probes" )
-
-    csvfile, err := os.Open(filename)
-    if err != nil {
-    	log.Fatalln("Couldn't open the csv file", err)
-    }
-
-    var records []Probe
-    cvsReader := csv.NewReader(csvfile)
-    cvsReader.Comma = '\t' // Use tab-delimited instead of comma
-
-    for {
-        row, err := cvsReader.Read()
-        if err != nil {
-            if err == io.EOF {
-                err = nil
-            }
-//            fmt.Println( records )
-            return records
-        }
-
-        var probe Probe
-        probe.Probeset_id = row[ 0  ]
-        probe.Affy_snp_id, err = strconv.Atoi(row[ 1  ])
-//        probe.Rsid        = row[ 2  ]
-        probe.Chr         = row[ 3  ]
-        probe.HG19_pos, err    = strconv.Atoi(row[ 4  ])
-        probe.HG19_ref    = row[ 5  ]
-        probe.HG19_alt    = row[ 6  ]
-        probe.HG38_pos, err    = strconv.Atoi(row[ 7  ])
-        probe.HG38_ref    = row[ 8  ]
-        probe.HG38_alt    = row[ 9  ]
-        probe.Source      = row[ 10 ]
-        probe.Category    = row[ 11 ]
-
-//        fmt.Println( probe )
-
-        records = append( records, probe )
-    }
-
-}
 
 
 
@@ -232,11 +124,5 @@ func handleRequests() {
     
 }
 func main() {
-//    probes = readProbes("example.array.design.tsv")
-//    fmt.Println( probes[0] )
-
-//    json.NewEncoder(os.Stdout).Encode( probes[0] )
-    db.hello_world()
     handleRequests()
-
 }
